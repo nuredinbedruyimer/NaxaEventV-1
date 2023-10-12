@@ -1,0 +1,5 @@
+mutation SignOut($refreshToken: String!) {
+  signOut(arg: { refreshToken: $refreshToken }) {
+    message
+  }
+}

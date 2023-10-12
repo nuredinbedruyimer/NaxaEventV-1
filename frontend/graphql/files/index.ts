@@ -1,0 +1,1 @@
+export {default as uploadFileMutation} from "./upload-file.mutation.gql"

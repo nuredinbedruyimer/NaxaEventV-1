@@ -1,0 +1,8 @@
+mutation Refresh($refreshToken: String!) {
+  refresh(arg: { refreshToken: $refreshToken }) {
+    message
+    userLogIn {
+      accessToken
+    }
+  }
+}

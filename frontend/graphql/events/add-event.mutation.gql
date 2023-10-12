@@ -1,0 +1,27 @@
+mutation AddEventMutation(
+  $title: String!
+  $description: String
+  $images: jsonb
+  $tags: jsonb
+  $date: timestamptz!
+  $price: numeric
+  $cityId: uuid
+  $location: jsonb
+  $specificAddress: String
+) {
+  insertEventsOne(
+    object: {
+      title: $title
+      description: $description
+      images: $images
+      tags: $tags
+      date: $date
+      price: $price
+      cityId: $cityId
+      location: $location
+      specificAddress: $specificAddress
+    }
+  ) {
+    id
+  }
+}

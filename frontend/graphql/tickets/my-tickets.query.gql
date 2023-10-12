@@ -1,0 +1,14 @@
+#import "../events/event-preview-fields.fragment.gql"
+
+query myTickets {
+  me {
+    tickets(orderBy: { createdAt: DESC }) {
+      event {
+        ...eventPreviewFields
+      }
+      id
+      createdAt
+      isValid
+    }
+  }
+}

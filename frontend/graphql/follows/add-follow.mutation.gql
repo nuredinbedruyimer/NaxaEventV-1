@@ -1,0 +1,5 @@
+mutation AddFollow($followedId: uuid) {
+  insertFollowsOne(object: { followedId: $followedId }) {
+    id
+  }
+}

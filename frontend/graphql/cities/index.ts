@@ -1,0 +1,1 @@
+export {default as getCitesQuery} from "./get-cities.query.gql"

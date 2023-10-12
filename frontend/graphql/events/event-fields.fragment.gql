@@ -1,0 +1,28 @@
+#import "../user/user-fields.fragment.gql"
+
+fragment eventFields on Events {
+  location
+  bookmarks_count
+  city {
+    name
+    id
+  }
+  date
+  description
+  id
+  images
+  price
+  specificAddress
+  tags
+  title
+  user {
+    ...userFields
+  }
+  bookmarked_by_user
+  followed_by_user
+  ticketsAggregate {
+    aggregate {
+      count
+    }
+  }
+}

@@ -1,0 +1,5 @@
+mutation AddTicket($eventId: uuid) {
+  insertTicketsOne(object: { eventId: $eventId }) {
+    id
+  }
+}

@@ -1,0 +1,7 @@
+#import "./event-fields.fragment.gql"
+
+query GetEvent($id: uuid!) {
+  eventsByPk(id: $id) {
+    ...eventFields
+  }
+}

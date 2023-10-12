@@ -1,0 +1,5 @@
+mutation AddBookmark($eventId: uuid) {
+  insertBookmarksOne(object: { eventId: $eventId }) {
+    id
+  }
+}

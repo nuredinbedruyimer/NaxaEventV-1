@@ -1,0 +1,15 @@
+fragment eventPreviewFields on Events {
+  title
+  description
+  bookmarks_count
+  city {
+    name
+    id
+  }
+  date
+  id
+  images(path: "[0]")
+  price
+  bookmarked_by_user
+  followed_by_user
+}

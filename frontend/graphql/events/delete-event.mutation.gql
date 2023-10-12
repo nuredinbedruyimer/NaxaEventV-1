@@ -1,0 +1,5 @@
+mutation DeleteEventMutation($id: uuid!) {
+  deleteEventsByPk(id: $id) {
+    id
+  }
+}

@@ -1,0 +1,17 @@
+mutation FileUploadMutation(
+  $base64Str: String!
+  $category: String!
+  $fileName: String
+  $extension: String
+) {
+  uploadFile(
+    arg: {
+      base64Str: $base64Str
+      category: $category
+      extension: $extension
+      fileName: $fileName
+    }
+  ) {
+    filePath
+  }
+}

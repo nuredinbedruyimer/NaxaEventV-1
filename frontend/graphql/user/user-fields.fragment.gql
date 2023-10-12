@@ -1,0 +1,9 @@
+fragment userFields on Users {
+  avatarUrl
+  description
+  email
+  followersCount
+  id
+  name
+  followingCount
+}

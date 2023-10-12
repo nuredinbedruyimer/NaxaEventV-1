@@ -1,0 +1,9 @@
+mutation userSignupVerification($verificationToken: String!) {
+  verifySignUp(arg: { verificationToken: $verificationToken }) {
+    message
+    userLogIn {
+      accessToken
+      refreshToken
+    }
+  }
+}

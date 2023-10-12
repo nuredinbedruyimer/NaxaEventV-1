@@ -1,0 +1,15 @@
+mutation UpdateUser(
+  $id: uuid!
+  $avatarUrl: String
+  $name: String
+  $description: String
+) {
+  updateUsersByPk(
+    pk_columns: { id: $id }
+    _set: { avatarUrl: $avatarUrl, name: $name, description: $description }
+  ) {
+    avatarUrl
+    description
+    name
+  }
+}

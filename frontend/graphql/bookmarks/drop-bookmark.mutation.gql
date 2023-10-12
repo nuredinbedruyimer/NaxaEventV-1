@@ -1,0 +1,5 @@
+mutation dropBookmark($id: uuid!) {
+  deleteBookmarksByPk(id: $id) {
+    id
+  }
+}

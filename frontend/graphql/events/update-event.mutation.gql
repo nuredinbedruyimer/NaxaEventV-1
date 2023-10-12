@@ -1,0 +1,29 @@
+mutation UpdateEventMutation(
+  $id: uuid!
+  $title: String
+  $description: String
+  $images: jsonb
+  $tags: jsonb
+  $date: timestamptz
+  $price: numeric
+  $cityId: uuid
+  $location: jsonb
+  $specificAddress: String
+) {
+  updateEventsByPk(
+    pk_columns: { id: $id }
+    _set: {
+      title: $title
+      description: $description
+      images: $images
+      tags: $tags
+      date: $date
+      price: $price
+      cityId: $cityId
+      location: $location
+      specificAddress: $specificAddress
+    }
+  ) {
+    id
+  }
+}

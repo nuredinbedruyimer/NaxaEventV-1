@@ -1,0 +1,5 @@
+mutation dropFollow($id: uuid!) {
+  deleteFollowsByPk(id: $id) {
+    id
+  }
+}
