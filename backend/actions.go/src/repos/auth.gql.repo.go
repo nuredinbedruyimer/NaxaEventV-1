@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/nuredin_bedru/naxa_event/src/env"
-	"github.com/nuredin_bedru/naxa_space/src/types"
+	"github.com/nuredin_bedru/naxa_event/src/types"
 	"github.com/hasura/go-graphql-client"
 )
 
