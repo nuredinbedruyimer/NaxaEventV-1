@@ -3,8 +3,8 @@ package repos
 import (
 	"log"
 
-	"github.com/estifanos-neway/event-space-server/src/commons"
-	types "github.com/estifanos-neway/event-space-server/src/types"
+	"github.com/nuredin_bedru/naxa_event/src/commons"
+	types "github.com/nuredin_bedru/naxa_event/src/types"
 )
 
 func SignInRepo(signInInput types.SignInInput) (int, *UserLogin, string) {
