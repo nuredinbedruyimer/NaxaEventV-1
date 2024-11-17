@@ -3,7 +3,7 @@ package repos
 import (
 	"log"
 
-	"github.com/estifanos-neway/event-space-server/src/commons"
+	"github.com/nuredin_bedru/naxa_event/src/commons"
 )
 
 func RefreshRepo(refreshToken string) (int, *UserLogin, string) {
