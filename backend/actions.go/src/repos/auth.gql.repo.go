@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/estifanos-neway/event-space-server/src/env"
-	"github.com/estifanos-neway/event-space-server/src/types"
+	"github.com/nuredin_bedru/naxa_event/src/env"
+	"github.com/nuredin_bedru/naxa_space/src/types"
 	"github.com/hasura/go-graphql-client"
 )
 
